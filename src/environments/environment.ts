@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  api: {
+    nestjs: {
+      role: "https://udemy-nestjs-course.herokuapp.com/api"
+    },
+    fleek: {
+      host: "https://fleek-api.herokuapp.com/api"
+    }
+  }
 };
 
 /*

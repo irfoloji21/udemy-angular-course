@@ -1,31 +1,20 @@
+<app-navbar [lang]="translateService.currentLang" (langChange)="setLanguage($event);"></app-navbar>
 
-  <app-navbar></app-navbar>
+<div class="row">
+  <div class="col-md-3">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="col-md-9">
+    <router-outlet> </router-outlet>
+  </div>
+</div>
 
-    <div class="row">
-      <div class="col-md-3">
-        <app-sidebar></app-sidebar>
-        <!-- <ul>
-          <li routerLink="home">Home</li> 
-          <li routerLink="role">Role</li> 
-          <li routerLink="user">User</li> 
-          <li [routerLink]="['user', 5]">User 5 detail</li> 
-          <li [routerLink]="['user', 5, 'role']">User 5 role</li> 
-        </ul> -->
-      </div>
-      <div class="col-md-9">
-        
-    <router-outlet></router-outlet>
-      </div>
-    </div>
-
-
-    <!-- <ngx-spinner
-    bdColor="rgba(51,51,51,0.8)"
-    size="medium"
-    color="#fff"
-    type="ball-scale-multiple"
-    [fullScreen]="true"
-  >
-    <p style="font-size: 20px; color: white">Loading...</p>
-  </ngx-spinner> -->
-  <!-- Footer -->
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+  [fullScreen]="true"
+>
+  <p style="font-size: 20px; color: white">Loading...</p>
+</ngx-spinner>

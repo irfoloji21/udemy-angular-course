@@ -1,33 +1,33 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-data-binding',
-  templateUrl: './data-binding.component.html',
-  styleUrls: ['./data-binding.component.scss']
+  selector: "app-data-binding",
+  templateUrl: "./data-binding.component.html",
+  styleUrls: ["./data-binding.component.scss"]
 })
 export class DataBindingComponent implements OnInit {
   user = {
-    name: "İrfan",
-    surname: "MEŞE",
-    job: "beradayi",
-    favorite_place: "haymatlos cafe",
-    favorite_place_image: "https://pr1.nicelocal.biz.tr/MiroVBcv0QSK36rVuf4sCg/587x440,q85/4px-BW84_n0QJGVPszge3NRBsKw-2VcOifrJIjPYFYkOtaCZxxXQ2XGz1_RLRdqLQDJKtE-gEnCkgXqv5rbhC7Auk_ybWij5XL2KIPXkUztWhUo925UEBg",
-    isEditable:true
+    name: "Ahmet",
+    surname: "Aydın",
+    job: "Software Developer",
+    favorite_place: "Kız Kulesi",
+    favorite_place_image:
+      "https://res.cloudinary.com/dlth9ls92/image/upload/v1581248618/dzzduewcvpyiaevn55ew.png",
+    isEditable: true
   };
 
   type = "text";
 
-  constructor() { }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
-  buttonClicked(){
+  buttonClicked() {
     alert("clicked");
   }
 
   inputSubmit(value: any) {
-    alert(value.target.value + " geldi");
+    // console.log(value);
+    alert(value.target.value + " geldi...");
   }
-
 }
