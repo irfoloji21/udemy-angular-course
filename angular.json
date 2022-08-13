@@ -92,7 +92,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": []
           }
@@ -123,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "udemy-angular-course"
+    }
+  },
+  "defaultProject": "udemy-angular-course",
+  "cli": {
+    "analytics": "dd248414-7f80-432b-9fcb-b50910721c7d"
+  }
 }
